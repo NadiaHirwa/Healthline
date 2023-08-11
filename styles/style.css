@@ -13,7 +13,9 @@ body{
     overflow: hidden;
     overflow-y: scroll;
     font-size: 20px;
+    background: #f4f5f7;
 }
+/*nav bar start*/
 .container{
     width: 100%;
     /*CSS of smooth scroll*/
@@ -128,7 +130,8 @@ a.active, a:hover{
         left: 0;
     }
 }
-
+/*nav bar end*/
+/* section start */
 section{
     display: flex;
     flex-direction: column;
@@ -138,6 +141,8 @@ section{
     width: 100%;
     height: 100vh;
     scroll-snap-align: center;
+}
+
 }
 section h1{
     font-size: 1.5rem;
@@ -149,6 +154,7 @@ section p{
     font-size: 1.5rem;
     margin-top: 10%;
 }
+/* home section start */
 section#home{
     background: url(../imgs/hospital.jpg) no-repeat;
     background-size: cover;
@@ -164,18 +170,39 @@ section#home .overlay{
     background-color: rgba(0,0,0,0.5);
     pointer-events: none;
 }
+section#home p{
+    font-weight: bold;
+}
+/* about section start */
 section#about{
     background: #f4f5f7;
-    padding-left: 50px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 30px;
 }
 section#about h1{
     margin-top: 15px;
     margin-bottom: 25px;
 }
+@media (max-width: 800px){
+    section#about{
+        height: 140vh;
+    }
+}
+@media (max-width: 680px){
+    section#about{
+        height: 150vh;
+    }
+}
+@media (max-width: 580px){
+    section#about{
+        height: 170vh;
+    }
+}
+/* contact section start */
 section#contact{
-    background: #6884a0;
+    background: white;
     text-align: right;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 section#contact input{
     height: 30px;
@@ -189,7 +216,35 @@ section#contact h1{
 }
 section#contact p{
     margin-top: 10px;
+}section#contact #input-box {
+    width: 100%;
 }
+section#contact #input-box label {
+    color: #000;
+}
+section#contact :where(#input-box input) {
+    height: 40px;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #000;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+section#contact :where(#message input) {
+    height: 90px;
+}
+section#contact button{
+    height: 30px;
+    width: 80px;
+    margin-bottom: 20px;
+    border-radius: 10px
+}
+section#contact button:hover{
+    background-color: #94cbf5;
+    cursor: pointer;
+}
+/* partners section start */
 section#partners{
     background: #f4f5f7;
 }
@@ -211,24 +266,6 @@ section#partners{
 .cards button{
     padding: 10px;
 }
-
-/* }
-.car-1{
-    background-image: url(minhealth.jpeg);
-    width: 200px;
-    height: 150px;
-}
-.car-2{
-    background-image: url(RBC2.webp);
-    width: 200px; 
-    height: 150px;
-}
-.car-3{
-    background-image: url(RSSB.jpeg);
-    width: 200px;
-    height: 150px;
-} */
-
 .card1{
     border: 1px solid grey;
     width: 300px;
@@ -239,15 +276,15 @@ section#partners{
 }
 
 .card1:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .card2:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .card3:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .card2{
@@ -303,35 +340,33 @@ section#partners{
 .img{
 height: 150px;
 }
-
-
- footer{
-    margin: auto;
-    margin-bottom: 30px;
+/* footer style */
+footer{
+  margin-top: 70px;
+   margin-bottom: 30px;
    padding: auto;
-    background: aliceblue;
-    opacity: 50%;
- }
- footer .social{
-    padding-bottom: 25px;
- }
- footer ul{
-    margin-top: 2px;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
- }
- footer ul a{
-    color: inherit;
-    text-decoration: none;
- 
- }
- footer ul li{
-    display: inline-block;
-    padding: 0 15px;
- }
- footer ul li a:hover{
-    opacity: 80%;
- }
+   background: aliceblue;
+   opacity: 50%;
+}
+footer .social{
+   padding-bottom: 25px;
+}
+footer ul{
+   margin-top: 2px;
+   padding: 0;
+   list-style: none;
+   font-size: 18px;
+   line-height: 1.6;
+   text-align: center;
+}
+footer ul a{
+   color: inherit;
+   text-decoration: none;
+}
+footer ul li{
+   display: inline-block;
+   padding: 0 15px;
+}
+footer ul li a:hover{
+   opacity: 70%;
+}
