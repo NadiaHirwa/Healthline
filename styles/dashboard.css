@@ -18,6 +18,18 @@ h1,
 h2{
     color:rgb(145, 169, 250);
 } 
+.btn{
+    background: #f05462;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover{
+    color: #f05462;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #f05462;
+}
 .side-menu{
     position: fixed;
     background: #f05462;
@@ -53,7 +65,7 @@ h2{
     position: fixed;
     top: 0;
     right: 0;
-    width: 80vw;
+    width: 78vw;
     height: 10vh;
     background: white;
     display: flex;
@@ -68,8 +80,8 @@ h2{
 }
 .container .header .nav .search{
     flex: 3;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .container .header .nav .search input[type=text]{
     border: none;
@@ -78,7 +90,7 @@ h2{
     width: 50%;
 }
 .container .header .nav .search button{
-    width: 70px;
+    width: 30px;
     height: 30px;
     border: none;
     display: flex;
@@ -91,8 +103,57 @@ h2{
 }
 .container .header .nav .user{
     flex: 1;
-    background: hotpink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.container .header .nav .user img{
+    width: 40px;
+    height: 40px;
+}
+.container .header .nav .user .img-case{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.container .header .nav .user .img-case img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .content{
+    position: relative;
+    margin-top: 15vh;
+    min-height: 90vh;
+    right: 30pc; 
+}
+.container .content h1{
+    margin-bottom: 5vh;
+}
+.container .content .content-2{
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+     
+}
+.container .content .content-2 .recent-payments{
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .content .content-2 .new-students{
+    flex: 5;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
 
 
 
