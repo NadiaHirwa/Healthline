@@ -1,6 +1,6 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
@@ -30,6 +30,20 @@ h2{
     padding: 3px 8px;
     border: 2px solid #f05462;
 }
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+table{
+    padding: 10px;
+}
+td,th{
+    text-align: left;
+    padding: 8px;
+}
 .side-menu{
     position: fixed;
     background: #f05462;
@@ -58,14 +72,15 @@ h2{
 .container{
     position: absolute;
     right: 0;
-    width: 80vh;
+    width: 80vw;
     height: 100vh;
+    background: #f1f1f1;
 }
 .container .header{
     position: fixed;
-    top: 0;
+    top: 0; 
     right: 0;
-    width: 78vw;
+    width: 80vw;
     height: 10vh;
     background: white;
     display: flex;
@@ -83,23 +98,23 @@ h2{
     display: flex;
     justify-content: center;
 }
-.container .header .nav .search input[type=text]{
+.container .header .nav .search input[type=search]{
     border: none;
     background: #f1f1f1;
     padding: 10px;
     width: 50%;
 }
 .container .header .nav .search button{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center ;
 }
 .container .header .nav .search button img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 .container .header .nav .user{
     flex: 1;
@@ -127,7 +142,7 @@ h2{
     position: relative;
     margin-top: 15vh;
     min-height: 90vh;
-    right: 30pc; 
+    background: #f1f1f1;
 }
 .container .content h1{
     margin-bottom: 5vh;
@@ -146,15 +161,61 @@ h2{
     background: white;
     margin: 0 25px 25px 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
 }
 .container .content .content-2 .new-students{
-    flex: 5;
+    flex: 3;
     background: white;
     min-height: 50vh;
     margin: 0 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
 } 
-
+.container .content .content-2 .new-students table td:nth-child(1) img{
+    height: 40px;
+    width: 40px;
+}
+.container .content .content-2 .new-students table td:nth-child(3) img{
+    height: 40px;
+    width: 40px;
+}
+@media screen and (max-width: 1050px){
+    .side-menu li{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 940px){
+    .side-menu li span{
+        display: none;
+    }
+    .side-menu {
+        align-items: center;
+    }
+    .side-menu li img{
+        width: 40px;
+        height: 40px;
+    }
+    .side-menu li:hover{
+        background: #f05462;
+        padding: 8px 38px;
+        border: 2px solid aliceblue;
+    }
+}
+@media screen and (max-width: 530px){
+    .brand-name h1{
+        font-size: 16px;
+    }
+    .side-menu li img{
+        width: 30px;
+        height: 30px;
+    }
+    .container .content .content-2 .recent-payments table th:nth-child(2),
+    .container .content .content-2 .recent-payments table td:nth-child(2){
+        display: none;
+    }
+}
 
 
 
@@ -248,4 +309,43 @@ h2{
 
             <p>Are you sure you want to submit ??</p>
             <button>submit</button>
-       </div> */
+       </div> 
+       
+       
+        <h4>ALLERGIES</h4>
+         we will have to get it from doctor's information
+         same as 
+         <h4>permanent disease</h4>
+
+        <h4>Background history</h4> 
+        <table border="1" height="80">
+            <tr>
+                <th>date</th>
+                <th>Hospital Name</th>
+                <th>disease</th>
+                <th>medecine</th>
+                <th>Dr.Name</th>
+            </tr>
+            <tr height="50">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <h4>Appointments</h4>
+        <table border="1" height="60">
+            <tr>
+                <th>date</th>
+                <th>Hospital Name</th>
+                <th>disease</th>
+                <th>Dr.Name</th>
+            </tr>
+            <tr height="50">
+                <td>wrgsg</td>
+                <td>dfg</td>
+                <td>fdgg</td>
+                <td>dfgd</td>
+            </tr>
+        </table>*/

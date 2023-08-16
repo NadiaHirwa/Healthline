@@ -1,49 +1,130 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <title>welcome to healthline</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initialscale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles/dashboard.css">
+        <title>#patients panel</title>
+        
     </head>
     <body>
-        <h4>ALLERGIES</h4>
-         we will have to get it from doctor's information
-         same as 
-         <h4>permanent disease</h4>
-
-        <h4>Background history</h4> 
-        <table border="1" height="80">
-            <tr>
-                <th>date</th>
-                <th>Hospital Name</th>
-                <th>disease</th>
-                <th>medecine</th>
-                <th>Dr.Name</th>
-            </tr>
-            <tr height="50">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-        <h4>Appointments</h4>
-        <table border="1" height="60">
-            <tr>
-                <th>date</th>
-                <th>Hospital Name</th>
-                <th>disease</th>
-                <th>Dr.Name</th>
-            </tr>
-            <tr height="50">
-                <td>wrgsg</td>
-                <td>dfg</td>
-                <td>fdgg</td>
-                <td>dfgd</td>
-            </tr>
-        </table>
-    </body>
-</html>
+        <div class="side-menu">
+            <div class="brand-name">
+                <h1>HEALTHLINK</h1>
+            </div>
+            <ul>
+                <li><span>Medical History</span></li>
+                <li><span>Upcoming Appointment</span></li>
+                <li><span>Prescription and Medicaions</span></li>
+                <li><span>Test Results</span></li>
+                <li><span>messaging system</span></li>
+                <li><span>Appointment Scheduling</span></li>
+                <li><span>Billing and Payments</span></li>
+                <li><span>Feedback and Ratings</span></li>
+                <li><span>Logout</span></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="header">
+                <div class="nav">
+                    <div class="search">
+                        <input type="search" placeholder="Search...">
+                        <button type="submit"><img src="./imgs/search2.png"></button>
+                    </div>
+                    <div class="user">
+                        <a href="#" class="btn">Add new</a>
+                        <img src="./imgs/notification.png" alt="">
+                        <div class="img-case">
+                            <img src="./imgs/profile1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content">
+                <h1>WELCOME DR#Name</h1>
+                <div class="content-2">
+                    <div class="recent-payments">
+                        <div class="title">
+                            <h2>Recent Payments</h2>
+                            <a href="#" class="btn">View All</a>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>School</th>
+                                <th>Amount</th>
+                                <th>Option</th>
+                            </tr>
+                            <tr>
+                                <td>HIRWA Nadia</td>
+                                <td>UR</td>
+                                <td>$500</td>
+                                <td><a href="#" class="btn">View</td>
+                            </tr>
+                            <tr>
+                                <td>HIRWA Nadia</td>
+                                <td>UR</td>
+                                <td>$500</td>
+                                <td><a href="#" class="btn">View</td>
+                            </tr>
+                            <tr>
+                                <td>HIRWA Nadia</td>
+                                <td>UR</td>
+                                <td>$500</td>
+                                <td><a href="#" class="btn">View</td>
+                            </tr>
+                            <tr>
+                                <td>HIRWA Nadia</td>
+                                <td>UR</td>
+                                <td>$500</td>
+                                <td><a href="#" class="btn">View</td>
+                            </tr>
+                            <tr>
+                                <td>HIRWA Nadia</td>
+                                <td>UR</td>
+                                <td>$500</td>
+                                <td><a href="#" class="btn">View</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="new-students">
+                        <div class="title">
+                            <h2>New students</h2>
+                            <a href="#" class="btn">View All</a>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>Profile</th>
+                                <th>School</th>
+                                <th>Option</th>
+                            </tr>
+                            <tr>
+                                <td><img src="./imgs/profile1.png" alt=""></td>
+                                <td>UR</td>
+                                <td><img src="./imgs/notification.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td><img src="./imgs/profile1.png" alt=""></td>
+                                <td>UR</td>
+                                <td><img src="./imgs/notification.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td><img src="./imgs/profile1.png" alt=""></td>
+                                <td>UR</td>
+                                <td><img src="./imgs/notification.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td><img src="./imgs/profile1.png" alt=""></td>
+                                <td>UR</td>
+                                <td><img src="./imgs/notification.png" alt=""></td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </body> 
+</html> 
