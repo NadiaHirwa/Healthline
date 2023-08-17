@@ -165,7 +165,7 @@ td,th{
     flex-direction: column;
 }
 .container .content .content-2 .new-students{
-    flex: 3;
+    flex: 5;
     background: white;
     min-height: 50vh;
     margin: 0 25px;
