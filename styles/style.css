@@ -169,6 +169,7 @@ section#home .overlay{
     height: 100%;
     background-color: rgba(0,0,0,0.5);
     pointer-events: none;
+    color: #d6d7d8;
 }
 section#home p{
     font-weight: bold;
