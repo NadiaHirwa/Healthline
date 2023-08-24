@@ -9,7 +9,7 @@
     </head>
     <body>
     <div class="container">
-        <nav>
+        <nav>  
             <input type="checkbox" name="" value="" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
@@ -68,14 +68,34 @@
             </form>
         </section>
         <section id="contact">
+            
             <h1>CONTACT US</h1>
+            <!-- <style>
+                #contact{
+                    display: flex;
+                    flex-direction: column;
+                }
+                #contact .right{
+                    width: 50%;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    float: left;
+                }
+                #contact .left{
+                    width: 50%;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    float: left;
+                }
+            </style> -->
+            <div class="right">
             <div id="column">
                 <div id="input-box"> 
                   <label for=" ">Full Name</label>
                   <input type="txt" required />
                 </div>  
                 <div id="input-box">
-                  <label>ID</label>
+                  <label>Sender ID</label>
                   <input type="number"required />
                 </div>
                 <div id="input-box">
@@ -89,14 +109,17 @@
             </div>
             <div id="column">
                 <div id="message">
-                    <label>enter your message</label></br></br>
-                    <input type="textarea">
+                    <label>Enter Your Message</label></br>
+                    <textarea rows="10" cols="26"></textarea>
                 </div>
             </div>
-            <button>SEND</button>
-            <h3>contact information</h3>
-            Email:healthline@gmail.com</br></br>
-            contact 07885425...</br>
+            <button>SUBMIT</button>
+            </div>
+            <div class="left">
+            <h3>contact information</h3></br>
+            <p>Email:healthline@gmail.com</p>
+            <p>contact: 07885425...</p>
+            </div>
         </section>
 
         <section id="partners">
@@ -143,8 +166,8 @@
         <ul class="list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">about us</a></li>
-            <li><a href="Home">Terms</a></li>
-            <li><a href="Home">private policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">private policy</a></li>
             <li><a href="#contact">contact us</a></li>
             <li><a href="#partners">our partners</a></li>
         </ul>

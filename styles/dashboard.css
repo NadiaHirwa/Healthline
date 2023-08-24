@@ -19,16 +19,16 @@ h2{
     color:rgb(145, 169, 250);
 } 
 .btn{
-    background: #f05462;
-    color: white;
+    background: #546bf0;
+    color: rgb(255, 255, 255);
     padding: 5px 10px;
     text-align: center;
 }
 .btn:hover{
-    color: #f05462;
+    color: #546bf0;
     background: white;
     padding: 3px 8px;
-    border: 2px solid #f05462;
+    border: 2px solid #546bf0;
 }
 .title{
     display: flex;
@@ -46,7 +46,7 @@ td,th{
 }
 .side-menu{
     position: fixed;
-    background: #f05462;
+    background: #546bf0;
     width: 20vw;
     min-height: 100vh;
     display: flex;
@@ -67,7 +67,7 @@ td,th{
 }
 .side-menu li:hover{
     background: whitesmoke;
-    color: #f05462;
+    color: #546bf0;
 }
 .container{
     position: absolute;
@@ -215,7 +215,7 @@ td,th{
         height: 40px;
     }
     .side-menu li:hover{
-        background: #f05462;
+        background: #546bf0;
         padding: 8px 38px;
         border: 2px solid aliceblue;
     }
