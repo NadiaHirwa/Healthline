@@ -205,7 +205,18 @@ section#contact{
     background: white;
     text-align: right;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    column-gap: 20px;
 }
+/* section#contact .right{
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+}
+section#contact .left{
+    height: 200px;
+    width: 200px;
+} */
 section#contact input{
     height: 30px;
     width: 150px;

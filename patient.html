@@ -13,11 +13,11 @@
                 <h1>HEALTHLINK</h1>
             </div>
             <ul>
-                <li><span>Medical HistoryY</span></li>
-                <li><span>Test ResultsY</span></li>
-                <li><span>Upcoming AppointmentY</span></li>
-                <li><span>Appointment SchedulingY</span></li>
-                <li><span>messaging system</span></li>
+                <li><span><a href="#medical"></a>Medical History</span></li>
+                <li><span>Test Results</span></li>
+                <li><span>Upcoming Appointment</span></li>
+                <li><span>Appointment Scheduling</span></li>
+                <li><span>Messaging system</span></li>
                 <li><span>Logout</span></li>
             </ul>
         </div>
@@ -39,11 +39,12 @@
             </div>
             
             <div class="content">
-                <h1>WELCOME DR#Name</h1>
+                <h1>WELCOME #Name</h1>
                 <div class="content-1">
-                    <div class="Medicalhistory">
+                    <div id="medical" class="Medicalhistory">
                         <div class="title">
                             <h2>Medical History</h2>
+                            <a href="#" class="btn">View All</a>
                         </div>
                         <table>
                             <tr>
@@ -185,13 +186,41 @@
                 
                 <div class="content-2">
                     <div class="recent-payments">
+                        <style>
+                            .choices{
+                                transform: translate(10%, 15%);
+                                left: 50%;
+                                font-size: 17px;
+                            }
+                            input[type="radio"]{
+                                margin-bottom: 8px;
+                            }
+                        </style>
                         <div class="title">
                             <h2>Appointment Scheduling</h2>
                         </div>
                         <p>choose what you about appointment</p>
-                        <label for="request">Request</label><span> <input type="radio" name="choice" value="request"></span>
-                        <label for="request">Reschedule</label><span> <input type="radio" name="choice" value="reschedule"></span>
-                        <label for="request">Cancel</label><span> <input type="radio" name="choice" value="cancel"></span>
+                        <div class="choices">
+                            <input type="radio" name="choice" value="choice-1"/>Request</br>
+                            <input type="radio" name="choice" value="choice-2"/>Reschedule</br>
+                            <input type="radio" name="choice" value="choice-3"/>Cancel</br>
+                            <p id="result">
+                                your choice is: here's result
+                            </p>
+                        </div>
+                        <script>
+                            let radioBtns = document.querySelectorAll("input[name='choice']");
+                            let result = document.getElementById("result");
+                            let findSelected = () =>{
+                                let selected = document.querySelector("input[name='choice']:checked");
+                                result.textContent = 
+                            }
+
+                            radioBtns.forEach(radioBtn =>{
+                                radio.addEventListener("change", findSelected);
+                            });  
+                        </script>
+                        
                     </div>
                     <div class="new-students">
                         <div class="title">

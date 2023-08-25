@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+    font-size: 20px;
 } 
 body{
     min-height: 100vh;
@@ -38,7 +39,8 @@ h2{
     border-bottom: 2px solid #999;
 }
 table{
-    padding: 10px;
+    border-collapse: separate;
+    border-spacing: 12px;
 }
 td,th{
     text-align: left;
