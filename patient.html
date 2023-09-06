@@ -185,43 +185,44 @@
                 </div>
                 
                 <div class="content-2">
-                    <div class="recent-payments">
-                        <style>
-                            .choices{
-                                transform: translate(10%, 15%);
-                                left: 50%;
-                                font-size: 17px;
-                            }
-                            input[type="radio"]{
-                                margin-bottom: 8px;
-                            }
-                        </style>
+                    <!-- <div class="recent-payments">
                         <div class="title">
                             <h2>Appointment Scheduling</h2>
                         </div>
-                        <p>choose what you about appointment</p>
+                        <p>choose what you want about appointment</p>
                         <div class="choices">
-                            <input type="radio" name="choice" value="choice-1"/>Request</br>
-                            <input type="radio" name="choice" value="choice-2"/>Reschedule</br>
+                            <input type="radio" name="choice" value="choice-1"/>Request
+                            <input type="radio" name="choice" value="choice-2"/>Reschedule
                             <input type="radio" name="choice" value="choice-3"/>Cancel</br>
                             <p id="result">
                                 your choice is: here's result
                             </p>
                         </div>
-                        <script>
-                            let radioBtns = document.querySelectorAll("input[name='choice']");
-                            let result = document.getElementById("result");
-                            let findSelected = () =>{
-                                let selected = document.querySelector("input[name='choice']:checked");
-                                result.textContent = 
-                            }
-
-                            radioBtns.forEach(radioBtn =>{
-                                radio.addEventListener("change", findSelected);
-                            });  
-                        </script>
-                        
-                    </div>
+                        <div class="choice_container">
+                            <div class="choice_description">
+                                <p>Patient Gender</p>
+                                <input type="radio" name="Gender" value="choice-1"/>Male
+                                <input type="radio" name="Gender" value="choice-2"/>Female</br>
+                                <p>Patient Names</p>
+                                <input type="text" name="Fname" placeholder="first name">
+                                <input type="text" name="Lname" placeholder="last name"></br>
+                                <p>Patient Date of Birth</p>
+                                <input type="date" name="date"/>
+                                <p>Patient Email</p>
+                                <input type="email" name="email"/>
+                                <p>Patient phone number</p>
+                                <input type="text" name="contact"/>
+                                <p>Hospital name</p>
+                                <select>
+                                    <option>CHUK</option>
+                                    <option>CHUB</option>
+                                    <option>Kanimba</option>
+                                    <option>khdfgks</option>
+                                    <option>dfgvd</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> -->
                     <div class="new-students">
                         <div class="title">
                             <h2>Messaging System</h2>
