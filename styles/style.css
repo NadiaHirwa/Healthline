@@ -203,60 +203,51 @@ section#about h1{
 /* contact section start */
 section#contact{
     background: white;
-    text-align: right;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    column-gap: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    text-align: left;
 }
-/* section#contact .right{
-    height: 200px;
-    width: 200px;
-    margin-left: 20px;
-}
-section#contact .left{
-    height: 200px;
-    width: 200px;
-} */
 section#contact input{
     height: 30px;
-    width: 150px;
     border-radius: 5px;
-    margin-bottom: 5px;
 }
 section#contact h1{
     font-size: 1.5rem;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+}
+section#contact h3{
+    text-align: left;
 }
 section#contact p{
-    margin-top: 10px;
-}section#contact #input-box {
+    /* margin-top: 10px; */
+}
+section#contact #input-box {
     width: 100%;
 }
 section#contact #input-box label {
     color: #000;
 }
 section#contact :where(#input-box input) {
-    height: 40px;
+    height: 60px;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #000;
-    margin-top: 8px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 section#contact :where(#message input) {
     height: 90px;
+    width: 100%;
 }
 section#contact button{
     height: 30px;
     width: 80px;
-    margin-bottom: 20px;
-    border-radius: 10px
+    border-radius: 5px;
 }
 section#contact button:hover{
     background-color: #94cbf5;
     cursor: pointer;
 }
+/* contact section end */
 /* partners section start */
 section#partners{
     background: #f4f5f7;
